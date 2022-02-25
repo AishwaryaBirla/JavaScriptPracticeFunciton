@@ -22,8 +22,16 @@ function filterFunction(inputArray, min){
             }
             return outputArray;
 }
+function reduceFunction(inputArray){
+    let sum=0;
+    for(let i in inputArray){
+                sum+=inputArray[i];
+    }
+    return sum;
+}
 
-
-// console.log(mapFunction(inputArray));
+console.log(mapFunction(inputArray));
+console.log(foreachFunction(inputArray));
 console.log(filterFunction(inputArray,30));
+console.log(reduceFunction(inputArray));
 
